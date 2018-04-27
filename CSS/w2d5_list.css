@@ -1,0 +1,27 @@
+#firstlist{
+
+    list-style-type: circle;
+}
+
+#secondtlist{
+
+    list-style-type: square;
+}
+#thirdlist{
+
+    list-style-type: upper-alpha;
+}
+#fourthlist{
+
+    list-style-type: upper-roman;
+}
+
+.imagemarker{
+    list-style-image: url(http://luatsuquangthai.vn/images/bookmarks/20x20/email.png);
+
+    width: 200px;
+  }
+
+ #secondULlist{
+     list-style-position: inside
+ }
