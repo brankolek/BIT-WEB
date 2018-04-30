@@ -1,0 +1,29 @@
+#first{
+    position: relative;
+    top: 50px;
+    left: 100px;
+    margin-bottom: 30px;
+}
+
+#second{
+
+
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    margin-left: 100px;
+}
+#third{\x
+
+
+    position: absolute;
+    bottom: 0px;;
+    right: 50%;
+}
+
+a{
+position: fixed;
+bottom: 10px;
+right: 10px;
+
+}

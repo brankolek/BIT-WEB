@@ -1,0 +1,57 @@
+.size{
+
+    width: 200px;
+    height: 200px;
+}
+
+#first{
+    background-color: red;
+}
+#second{
+    background-color:orange;
+}
+#third{
+    background-color:blue;
+}
+
+#forth{
+    background-color: red;
+}
+#fifth {
+    background-color: orange;
+    position: relative;
+    top: -100px;
+    left: 100px;
+}
+#sixth{
+    background-color: blue;
+    position: relative;
+     top: -200px;
+    left: 200px;
+}
+
+#seventh{
+    background-color: red;
+    position: absolute;
+    right: 0px;
+    z-index: 2;
+
+    
+}
+#eight{
+    background-color:orange;
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    z-index: 1;
+}
+#ninth{
+    background-color:blue;
+    position: absolute;
+    right: 200px;
+    top: 200px;
+
+}
+#DIV {
+    position: relative;
+}

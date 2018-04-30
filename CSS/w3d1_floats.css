@@ -1,0 +1,23 @@
+#navbar {
+    background-color: maroon;
+    color: white;
+    padding: 2px;
+    width: 960px;
+    overflow: hidden;
+    float: right;
+    font-size: 1.2em;
+
+}
+li {
+    display: inline;
+    padding-right: 15px;
+    
+}
+
+ul{
+    float: right;
+}
+
+a{
+    color: white;
+}
