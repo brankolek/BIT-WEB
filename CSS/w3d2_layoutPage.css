@@ -1,0 +1,74 @@
+
+*{
+    box-sizing: border-box;
+}
+#main{
+
+    margin:0 auto;
+    width: 960px;
+}
+
+#navbar {
+    background-color: maroon;
+    color: white;
+    padding: 2px;
+    width:100%;
+    font-size: 1.2em;
+    overflow: hidden;
+   margin: 0 auto;
+   margin-bottom: 3px;
+
+}
+li {
+    display: inline;
+    padding-right: 15px;
+    
+}
+
+ul{
+    float: right;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+#mainPic{
+    margin: 0 auto;
+    clear: right;
+    display: block;
+    width:100%;
+
+}
+
+.card{
+
+    width: 300px;
+    margin: 10px 0px 10px 19px;
+    float: left;
+}
+.card>p{
+    margin-top: 0px;
+}
+
+#card3{
+    clear: left;
+}
+
+#navCard{
+    background-color: rgb(186, 202, 43);
+    float: right;
+    width: 300px;
+    margin-top: 5px;
+    padding: 8px;
+    
+}
+
+#footer{
+    width: 100%;
+    background-color: blue ;
+    color: white;
+    clear: left;
+    padding-left: 300px;
+}

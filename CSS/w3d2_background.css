@@ -1,0 +1,9 @@
+body{
+
+    background-image: url(https://images.unsplash.com/photo-1523057530100-383d7fbc77a1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cff1b2c9744c71e84145dd78928513fc&auto=format&fit=crop&w=500&q=60);
+    color: green;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-attachment: fixed;
+    background-size: cover;
+}
