@@ -1,0 +1,41 @@
+img{
+
+width: 20%;
+border-radius: 50%;
+
+}
+
+div{
+    display: inline-block;
+    vertical-align: top;
+    padding: 1%;
+}
+
+
+
+
+
+main{
+    margin: 0 auto;
+width: 80%;
+
+
+}
+article{
+
+width: 45%;
+float: left;
+padding: 1%;
+}
+
+#second {
+    
+    border-left: solid;
+}
+
+#third {
+
+    border-left: solid;
+}
+
+
