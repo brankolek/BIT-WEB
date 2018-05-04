@@ -29,13 +29,14 @@ article{
 
 li{
     display: inline-block;
+    border: 0px;
  
 }
 
 ul{
    position: absolute;
     top: 0px;
-    right: 7px;
+    right: 13px;
 
     
 }
@@ -44,4 +45,19 @@ header{
 
     padding-top: 2px;
 }
+
+header>p{
+    text-align: left;
+}
+}
+
+@media(min-width:1024px){
+
+    article{
+        display: inline-block;
+        width: 33%;
+        box-sizing: border-box;
+    }
+
+
 }
