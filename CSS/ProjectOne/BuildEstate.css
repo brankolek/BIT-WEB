@@ -1,17 +1,15 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
     font-family: roboto;
     font-weight: 900;
 }
+
 body {
     width: 100%;
 }
-header {
 
-}
-
-header > div {
+header>div {
     position: relative;
     background-image: url(assets/images/banner3.jpg);
     background-size: cover;
@@ -19,18 +17,18 @@ header > div {
     color: white;
     text-align: center;
     text-transform: uppercase;
-
 }
-div > h1 {
+
+header>div>h1 {
     position: absolute;
     top: 27%;
     width: 90%;
     left: 5%;
     font-size: 1.6em;
     line-height: 110%;
-    
 }
-div > button {
+
+div>button {
     position: absolute;
     width: 30%;
     left: 35%;
@@ -44,18 +42,16 @@ div > button {
     letter-spacing: 1.5px;
 }
 
-header>h1{
-     text-align: center;
-     margin-top: 20px;
-     font-weight: bold;
-     text-transform: uppercase;
-     color: gray;
-     margin-bottom: 15px;
-
+header>h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: gray;
+    margin-bottom: 15px;
 }
 
-h1>span{
-
+h1>span {
     color: orange;
     border-width: 3px 0px 3px 3px;
     border-style: solid;
@@ -63,43 +59,95 @@ h1>span{
     padding-left: 6px;
 }
 
-ul{
-
+header ul {
     list-style-type: none;
-    background-color: rgb(71, 155, 211);
+    background-color: rgb(127, 200, 248);
     color: white;
     line-height: 2;
     /* margin-left: -35px; */
     padding-left: 0px;
-    width: 92%;
+    width: 90%;
     margin: 0 auto;
-
 }
 
-li{
+li {
     text-align: center;
 }
+
 @font-face {
- font-family: 'roboto';
- src: url(assets/fonts/Roboto-Thin.ttf);
- src: url(assets/fonts/Roboto-Bold.ttf);
+    font-family: 'roboto';
+    src: url(assets/fonts/Roboto-Thin.ttf);
+    src: url(assets/fonts/Roboto-Bold.ttf);
 }
 
-
-main{
-    width: 80%;
+main {
+    width: 90%;
     margin: 0 auto;
     margin-top: 60px;
 }
-main > h1 {
+
+main h1 {
     text-align: center;
-}
-article > h3 {
-    color: lightblue;
-    margin-bottom: 15px;
-}
-article > p {
-    font-weight: 400;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
 }
 
+article>h3 {
+    color: rgb(27, 198, 255);
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+article>p {
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+article ul {
+    list-style-image: url(assets/images/arrow_bullet.png);
+    margin: 0;
+    padding: 17px;
+}
+
+article lI {
+    text-align: left;
+    margin-bottom: 7px;
+    text-transform: capitalize;
+}
+
+main img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#line1 {
+    border: 1px solid black;
+    width: 12%;
+    margin-left: 100px;
+    margin-bottom: 7px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#line2 {
+    border: 1px solid black;
+    width: 12%;
+    margin-right: 100px;
+    display: inline-block;
+    margin-bottom: 7px;
+    margin-left: 5px;
+}
+
+#qube {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    transform: rotate(45deg);
+    display: inline-block;
+}
+
+.card {
+    background-color: rgb(80, 214, 255);
+    margin-top: 10px;
+}
