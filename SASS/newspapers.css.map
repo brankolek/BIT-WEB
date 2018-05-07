@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CAAA;EACG,eAAe,EAAE,IAAI;CAOxB;;AARD,AAEI,CAFH,AAEG,OAAQ,CAAA;EACJ,gBAAgB,EAAE,MAAM;CAC5B;;AAJJ,AAKG,CALF,AAKE,QAAS,CAAA;EACR,gBAAgB,EAAE,MAAM;CACxB",
+    "sources": [
+        "newspapers.scss"
+    ],
+    "names": [],
+    "file": "newspapers.css"
+}

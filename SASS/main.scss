@@ -1,0 +1,29 @@
+//  @import "mixin" ;
+
+// p:nth-child(1){
+//     @include textShadow(3px,rgba(0,200,30,0.5) );
+    
+// }
+
+
+// p:nth-child(2) {
+//     @include boxShadow(10px, 10px);
+// }
+
+.border {
+    border-style: double;
+    border-width: 3px;
+    width: 200px+300px;
+}
+p:nth-child(1){
+    @extend .border;
+    border-color: red;
+}
+p:nth-child(2){
+    @extend .border;
+    border-color: blue;
+}
+p:nth-child(3){
+    @extend .border;
+    border-color:green;
+}
