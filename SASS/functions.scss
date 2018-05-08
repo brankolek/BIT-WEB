@@ -1,0 +1,14 @@
+@function translate2($width, $border,$padding){
+    
+    @return  $width + 2*( $border + $padding) ;
+}
+
+p:nth-child(1){
+
+    width: 200px;
+}
+
+p:nth-child(2){
+
+  translate2(200,2,5);
+}

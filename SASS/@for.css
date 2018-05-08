@@ -1,0 +1,20 @@
+p:nth-of-type(1) {
+  background-color: blue;
+  font-size: 16px;
+}
+
+p:nth-of-type(2) {
+  background-color: red;
+  font-size: 18px;
+}
+
+p:nth-of-type(3) {
+  background-color: orange;
+  font-size: 20px;
+}
+
+p:nth-of-type(4) {
+  background-color: green;
+  font-size: 22px;
+}
+/*# sourceMappingURL=@for.css.map */

@@ -1,0 +1,30 @@
+// $integer:1;
+
+
+@mixin bcolor($int){
+
+    @if $int ==  1 {
+        background-color: blue;
+    }
+    @else if $int == 2{
+        background-color: red;
+    }
+    @else if $int == 3{
+        background-color:orange;
+    }
+    @else if $int == 4{
+        background-color:green;
+    }
+
+}
+
+@for $i from 1 through 4{
+
+        p:nth-of-type(#{$i}){
+        @include bcolor($i);
+        font-size: 16px +($i - 1)*2;
+  
+
+        }
+}
+
