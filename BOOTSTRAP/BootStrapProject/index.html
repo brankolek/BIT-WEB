@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
         crossorigin="anonymous">
@@ -18,12 +18,12 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light ">
-        <a class="navbar-brand" href="#">BIT STUDENT</a>
+    <nav class="navbar navbar-expand-lg  ">
+        <a class="navbar-brand pl-5 latob" href="#">BIT STUDENT</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
             aria-expanded="false" aria-label="Toggle navigation">
-            MENU
-            <span class="navbar-toggler-icon"></span>
+            <span id="op1">MENU</span>
+            <span id="iconnesto" class="navbar-toggler-icon "></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
@@ -44,20 +44,19 @@
             </div>
         </div>
         <div class="row pb-3">
-            <div class="col-sm-12">
-                <h1 class="text-center">BOOTSTRAP AND SASS</h1>
-            </div>
-        </div>
-        <div class="row pb-3">
             <div class="col-sm-12 text-center">
-
-                <i class="fas fa-star"></i>
-
+                <h1 class="latob">BOOTSTRAP AND SASS</h1>
+                <div class="linel"></div>
+                <h3>
+                    <i class="fas fa-star"></i>
+                </h3>
+                <div class="liner"></div>
             </div>
         </div>
+
         <div class="row">
             <div class="col-sm-12  h4">
-                <p class="text-center"> Web developer - Graphic Artist - User Experience Designer</p>
+                <p class="text-center latol"> Web developer - Graphic Artist - User Experience Designer</p>
             </div>
 
 
@@ -71,13 +70,13 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-sm-12 text-center">
-                <h1>PORTFOLIO</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <i class="fas fa-star"></i>
+            <div class="col-sm-12 text-center pt-5">
+                <h1 class="latob">PORTFOLIO</h1>
+                <div class="linel b"></div>
+                <h3>
+                    <i class="fas fa-star"></i>
+                </h3>
+                <div class="liner b"></div>
             </div>
         </div>
 
@@ -98,7 +97,7 @@
             <div class="col-sm-12  col-md-6 col-lg-4  mb-2">
                 <img src="../BootStrapProject/img/portfolio/safe.png" class="img-fluid" alt="">
             </div>
-            <div class="col-sm-12  col-md-6 col-lg-4  mb-2">
+            <div class="col-sm-12  col-md-6 col-lg-4  mb-5">
                 <img src="../BootStrapProject/img/portfolio/submarine.png" class="img-fluid" alt="">
             </div>
         </div>
@@ -112,9 +111,13 @@
 
         <div class="row about justify-content-center">
 
-            <div class="col-sm-12 text-center">
-                <h1>ABOUT</h1>
-                <i class="fas fa-star"></i>
+            <div class="col-sm-12 text-center pt-5 pb-3 about">
+                <h1 class="latob">ABOUT</h1>
+                <div class="linel"></div>
+                <h3>
+                    <i class="fas fa-star"></i>
+                </h3>
+                <div class="liner"></div>
 
             </div>
             <div class="col-sm-12 col-lg-3   text-left">
@@ -131,7 +134,8 @@
 
             </div>
             <div class="col-sm-12 text-center">
-                <button></button>
+                <button type="button" class="btn btn-outline-light mb-5">
+                    <i class="fas fa-info-circle"></i> Find Out More</button>
 
             </div>
 
@@ -141,57 +145,93 @@
 
 
 
-        <div class="row contact">
+        <div class="row contact justify-content-center">
 
-            <div class="col-sm-12 text-center">
-                <h1>CONTACT ME</h1>
-                <i class="fas fa-star"></i>
+            <div class="col-sm-12 text-center py-5">
+                <h1 class="latob">CONTACT ME</h1>
+                <div class="linel b"></div>
+                <h3>
+                    <i class="fas fa-star"></i>
+                </h3>
+                <div class="liner b"></div>
 
             </div>
 
-            <div class="form-group row justify-content-center">
-                <div class="col-10 mb-2">
+            <form class="form-group row " method="GET">
+                <div class="col-11  mb-2">
 
-                    <input class="form-control" type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
+                    <input class="form-control" type="text" class="form-control" placeholder="Name">
                 </div>
-                <div class="col-10 mb-2">
+                <div class="col-11 mb-2">
 
-                    <input class="form-control" type="text" class="form-control" id="formGroupExampleInput" placeholder="Email">
+                    <input class="form-control" type="text" class="form-control" placeholder="Email">
                 </div>
-                <div class="col-10 mb-2">
+                <div class="col-11 mb-2">
 
-                    <input class="form-control" type="text" class="form-control" id="formGroupExampleInput" placeholder="Phone number">
+                    <input class="form-control" type="text" class="form-control" placeholder="Phone number">
                 </div>
 
-                <div class="col-10">
+                <div class="col-11">
                     <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
                 </div>
 
-                <div class="col-10">
-                    <button>BUTTON</button>
+                <div class="col-11">
+                    <input class="btn btn-primary mt-3 send" type="submit" value="Send">
                 </div>
-            </div>
+            </form>
 
         </div>
 
-
-        <div class="row location">
-
-
-
-
-
-
-
-
-
-
-        </div>
 
 
 
 
     </div>
+
+    <div class="container-fluid location ">
+        <div class="row justify-content-center">
+            <div class="col-5 col-md-3 text-center ">
+
+                <h3 class="py-3 ">LOCATION</h3>
+                <p>Centar za obrazovanje BIT TECHNOLOGY Nemanjina 4/1,Beograd</p>
+
+            </div>
+            <div class="w-100 d-md-none"></div>
+
+            <div class="col-6 col-md-3 text-center  ">
+                <h3 class="py-3">AROUND THE WEB</h3>
+                <p>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fab fa-linkedin"></i>
+                </p>
+            </div>
+            <div class="w-100 d-md-none"></div>
+            <div class="col-8 text-center col-md-3  ">
+
+                <h3 class="py-3 ">MORE DETAILS</h3>
+                <p>We believe that future of Serbia firmly depends on our ability to scale the number of individuals involved
+                    in the IT sector. That is why we founded BIT.</p>
+
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <dir class="col-6 text-center py-4">
+                <p> Copyright
+                    <i class="far fa-copyright"></i> Bit Student 2017
+                    <br>
+                    <span> BIT thanks to Start Bootstrap!</span>
+                </p>
+
+            </dir>
+        </div>
+
+
+
+    </div>
+
 
 
 

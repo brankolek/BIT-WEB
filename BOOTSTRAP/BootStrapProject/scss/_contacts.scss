@@ -1,0 +1,45 @@
+.send{
+
+    background-color: $Greenish !important;
+    border-color: $Greenish !important;
+}
+
+.button{
+    border-color: $Greenish !important;
+}
+
+.location {
+    background-color: $Blueish !important;
+    color: white !important;
+}
+span{
+    opacity: 0.3;
+    font-size: 12px;
+}
+
+.about{
+
+    color: white;
+}
+.linel{
+    position: relative;
+    top: 32px;
+    right: 70px;
+    display: inline-block;
+    height: 10px;
+    width: 100px;
+    border-top: 4px white solid;
+}
+.liner{
+    position: relative;
+    bottom: 32px;
+    left: 72px;
+    display: inline-block;
+    height: 10px;
+    width: 100px;
+    border-top: 4px white solid;
+}
+
+.b{
+    border-color: black;
+}
