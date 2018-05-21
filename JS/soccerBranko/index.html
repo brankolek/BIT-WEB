@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="./img/player.png" id="player" alt="">
+
+    <input id="freeze" type="button" value="FREEZE">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+
+    <script>
+        // var bodyElement = document.querySelector("body");
+        // var freezeElement = document.querySelector("#freeze");
+
+
+        function move() {
+            var x = event.clientX;
+            var y = event.clientY;
+            var player = document.querySelector("#player");
+
+            player.style.top = (y - 40) + "px";
+            player.style.left = (x - 40) + "px";
+
+        }
+
+        // function freeze() {
+
+
+        //     bodyElement.removeEventListener("click", move)
+
+        // }
+        // <!-- 
+        //         bodyElement.addEventListener("click", move); -->
+
+
+        // freezeElement.addEventListener("click", freeze)
+
+
+        $('body').click(move);
+        $('#freeze').click(function () {
+
+            $("body").off("click");
+        })
+    </script>
+
+</body>
+
+</html>

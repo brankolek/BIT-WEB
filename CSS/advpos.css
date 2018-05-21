@@ -1,31 +1,31 @@
 body {
     background-color: rgb(246, 245, 246);
 }
+
 .name {
     display: inline;
     margin: 0 5px 0 5px;
-
-
 }
+
 #navbar {
-    background-color: rgb(255, 190, 0);   
+    background-color: rgb(255, 190, 0);
     padding: 5px 0 5px 0;
-    
 }
 
-#submenu{
-display: none;
+#submenu {
+    display: none;
     width: 200px;
-background-color: red;
-position: relative;
-left: 150px;
-bottom: 40px;
+    background-color: red;
+    position: relative;
+    left: 150px;
+    bottom: 40px;
 }
-button:active{
-    #submenu{
 
+button:active {
+    #submenu {
         display: block;
     }
-   background-color: red; 
-
+    background-color: red;
 }
+
+:nth-of-type()

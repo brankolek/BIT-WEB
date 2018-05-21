@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+    .img {
+
+        width: 33%;
+    }
+
+    .selected {
+
+        border: 5px solid red;
+    }
+</style>
+
+<body>
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+
+
+
+    <script>
+        var array = [
+            "https://images.unsplash.com/photo-1490843524522-ee99e561bb90?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7e40c112e3c25f8f8e7b58d1df310228&auto=format&fit=crop&w=500&q=60",
+            "https://images.unsplash.com/photo-1509123825938-c6766eb401bf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=66580f390176f0f4113f4c2b5f518e66&auto=format&fit=crop&w=500&q=60",
+            "https://images.unsplash.com/photo-1523787357539-54a7d16e0c8a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e1deaa5f8a85aded2a2f072e0f642ed7&auto=format&fit=crop&w=500&q=60"
+        ]
+
+
+        var div1 = $("<div>")
+        var div2 = $("<div>")
+
+        $("body").append(div1);
+        $("body").append(div2);
+
+
+        for (var j = 0; j < array.length; j++) {
+            var img = $("<img>");
+            img.attr("src", array[j]);
+            img.addClass("img");
+            img.appendTo(div1);
+
+
+
+        }
+        for (var j = 0; j < array.length; j++) {
+            var img = $("<img>");
+            img.attr("src", array[j]);
+            img.addClass("img");
+            img.appendTo(div2);
+
+
+        }
+
+        $("div:nth-of-type(1)>img:nth-of-type(1)").addClass("selected")
+
+
+        function remove() {
+
+            var sel = $(".selected");
+            $(".selected").removeClass("selected");
+
+
+            sel.parent().next().children().eq(1).addClass('selected')
+
+        }
+        remove()
+    </script>
+</body>
+
+</html>

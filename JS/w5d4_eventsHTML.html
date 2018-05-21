@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .bcolor {
+
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="button" value="BUTTON" onclick="changeColor()">
+    <br>
+    <br>
+    <br>
+    <input type="button" value="TurnOn" id="auto" onclick="autoChangeColor()">
+
+    <script>
+        var bodyElement = document.querySelector('body');
+        var handle;
+
+        function changeColor() {
+            bodyElement.classList.toggle("bcolor");
+        }
+
+
+        function autoChangeColor() {
+            var buttonElement = document.querySelector("#auto")
+
+            if (buttonElement.getAttribute("value") === "TurnOn") {
+                handle = setInterval(changeColor, 1000);
+                buttonElement.setAttribute("value", "TurnOff");
+            } else {
+                buttonElement.setAttribute("value", "TurnOn");
+                clearInterval(handle);
+            }
+
+        }
+    </script>
+</body>
+
+</html>
