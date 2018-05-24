@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .img {
+
+            width: 200px;
+            margin: 5px;
+        }
+
+        .head {
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+
+
+    <div class="container head">
+        <nav class="navbar navbar-light bg-light  justify-content-end ">
+            <p class="navbar-brand">GitHubSearcher</p>
+            <form class="form-inline navbar-right">
+                <input class="form-control mr-sm-2" id="searchInput" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success mx-5 my-2 my-sm-0" id="searchButton" type="button">Search</button>
+            </form>
+        </nav>
+    </div>
+
+    <div id="log" class="">
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+
+
+    <script>
+        $("#searchButton").on("click", function () {
+            console.log("sals");
+            var searchData = $("#searchInput").val();
+            var apiUrl = "https://api.github.com/search/users?q=" + searchData;
+            $.get(apiUrl).done(function (response) {
+                $("#log").html("");
+                response.items.forEach(function (element) {
+                        var div = $("<div>");
+
+                        div.css("display", "inline-block")
+                        var img = $("<img>").attr("src", element.avatar_url)
+                        img.addClass("img")
+                        var login = $("<p>").text(element.login)
+                        div.append(img);
+                        div.append(login);
+                        $('#log').append(div)
+                    }
+
+                )
+
+
+            })
+
+
+
+        })
+    </script>
+
+</body>
+
+
+</html>
