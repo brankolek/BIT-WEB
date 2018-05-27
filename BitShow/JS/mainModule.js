@@ -3,7 +3,7 @@ $(function () {
 
 
         let handle = (data) => {
-
+            $('#main').html("")
             UIModule.render(data);
 
         }
@@ -12,16 +12,38 @@ $(function () {
 
 
 
+        var searchListener = () => {
+
+            $("#searchButton").on("click", () => {
 
 
-        return {
+                console.log(UIModule.getData());
+                console.log(searchItem)
+                dataModule.findData(searchItem, handle)
 
+
+
+
+
+
+            })
 
 
         }
 
 
 
+
+        return {
+
+            searchListener
+
+        }
+
+
+
     })(UIModule, dataModule);
+
+    mainModule.searchListener();
 
 });

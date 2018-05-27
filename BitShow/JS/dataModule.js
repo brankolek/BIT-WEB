@@ -8,11 +8,23 @@ let dataModule = (() => {
 
     }
 
+    let findData = (searchItem, handle) => {
+
+        let api = "http://api.tvmaze.com/search/shows?q=" + searchItem
+        $.get(api).done(function (data) {
+            console.log(data)
+
+        })
+
+
+    }
+
 
 
     return {
 
-        loadData
+        loadData,
+        findData
     }
 
 

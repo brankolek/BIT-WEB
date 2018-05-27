@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./main.css">
+    <meta charset="UTF-8"> s
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <img src="./img/player.png" id="player" alt="">
+    <input id="freeze" type="button" value="freeze" name="" id="">
+    <script>
+        var bodyElement = document.querySelector("body");
+        var playerElement = document.querySelector("#player");
+        var freezeElement = document.querySelector("#freeze")
+
+
+        function move() {
+            console.log("b");
+
+            var x = event.clientX;
+            var y = event.clientY;
+            console.log(x);
+            console.log(y);
+
+
+            playerElement.style.left = x + "px";
+            playerElement.style.top = y + "px";
+
+
+        }
+
+        bodyElement.addEventListener("click", move)
+        freezeElement.addEventListener("click", function () {
+
+            bodyElement.removeEventListener("click", move);
+            
+        })
+    </script>
+</body>
+
+</html>

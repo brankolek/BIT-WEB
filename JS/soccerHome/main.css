@@ -1,0 +1,19 @@
+body {
+    background-image: url(./img/field.png);
+    background-size: cover;
+    width: 2000px;
+    height: 900px;
+}
+
+#player {
+    width: 50px;
+    position: absolute;
+}
+
+#freeze {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 50px;
+}
