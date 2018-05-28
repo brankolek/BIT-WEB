@@ -8,7 +8,7 @@ let UIModule = (() => {
     }
 
     let renderSearch = (data) => {
-
+        $("#main").html("")
         for (index = 0; index < data.length; index++) {
 
 
@@ -23,9 +23,11 @@ let UIModule = (() => {
                 $("#main").append(row);
             }
             let col = $("<div>");
-            let img = $("<img>").attr("src", data[index].show.image.medium)
-            let p = $("<p>").text(data[index].show.name)
-            col.append(img);
+            let img = $("<img>").attr("src", data[index].show.image.medium);
+            let p = $("<p>").text(data[index].show.name);
+            let link = $("<a>");
+            link.append(img)
+            col.append(link);
             col.append(p);
             col.addClass('col')
             row.append(col);
@@ -55,7 +57,11 @@ let UIModule = (() => {
             let col = $("<div>");
             let img = $("<img>").attr("src", data[i].image.medium)
             let p = $("<p>").text(data[i].name)
-            col.append(img);
+
+            let query = "./ShowInfoPage?id=" + data[i].id
+            let link = $("<a>").attr("href", query);
+            link.append(img);
+            col.append(link);
             col.append(p);
             col.addClass('col')
             row.append(col);

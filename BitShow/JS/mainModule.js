@@ -2,11 +2,11 @@
 let mainModule = ((UIModule, dataModule) => {
 
 
-    // let handle = (data) => {
+    let handle = (data) => {
 
-    //     UIModule.render(data);
+        UIModule.render(data);
 
-    // }
+    }
     let handleSearch = (data) => {
 
         UIModule.renderSearch(data);
@@ -14,15 +14,13 @@ let mainModule = ((UIModule, dataModule) => {
     }
 
 
-    // $(window).on("load", () => {
+    function init() {
+        dataModule.loadData(handle)
 
-    // function init() {
-    //     dataModule.loadData(handle)
-
-    // }
+    }
 
 
-    // })
+
 
 
 
@@ -32,22 +30,19 @@ let mainModule = ((UIModule, dataModule) => {
             e.preventDefault()
 
             let searchItem = UIModule.getData()
-            console.log(searchItem)
-
-
-
-            // $(window).off("load", () => {
-
-
-            //     dataModule.loadData(handle)
-
-            // })
-            // $('#main').html("")
 
 
             dataModule.findData(searchItem, handleSearch)
 
 
+        })
+
+
+    }
+
+    var imgListener = () => {
+
+        $("img").on("click", () => {
 
 
 
@@ -63,7 +58,7 @@ let mainModule = ((UIModule, dataModule) => {
     return {
 
         searchListener,
-        // init
+        init
 
     }
 
@@ -71,7 +66,7 @@ let mainModule = ((UIModule, dataModule) => {
 
 })(UIModule, dataModule);
 
-// mainModule.init()
+mainModule.init()
 mainModule.searchListener();
 
 // });
