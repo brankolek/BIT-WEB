@@ -1,8 +1,45 @@
 let UIModule = (() => {
 
-    let getData = () => $("#search").val();
+    let getData = () => {
 
 
+        let searchItem = $("#searchInput").val()
+        return searchItem;
+    }
+
+    let renderSearch = (data) => {
+
+        for (index = 0; index < data.length; index++) {
+
+
+            console.log(index)
+
+            if (index % 3 === 0) {
+
+                var row = $("<div>");
+
+                row.addClass("row")
+
+                $("#main").append(row);
+            }
+            let col = $("<div>");
+            let img = $("<img>").attr("src", data[index].show.image.medium)
+            let p = $("<p>").text(data[index].show.name)
+            col.append(img);
+            col.append(p);
+            col.addClass('col')
+            row.append(col);
+
+
+        }
+
+
+
+
+
+
+
+    }
 
     let render = (data) => {
 
@@ -33,6 +70,7 @@ let UIModule = (() => {
     return {
 
         render,
+        renderSearch,
         getData
     }
 

@@ -1,49 +1,77 @@
-$(function () {
-    let mainModule = ((UIModule, dataModule) => {
+// $(function () {
+let mainModule = ((UIModule, dataModule) => {
 
 
-        let handle = (data) => {
-            $('#main').html("")
-            UIModule.render(data);
+    // let handle = (data) => {
 
-        }
+    //     UIModule.render(data);
 
-        dataModule.loadData(handle)
+    // }
+    let handleSearch = (data) => {
 
+        UIModule.renderSearch(data);
 
-
-        var searchListener = () => {
-
-            $("#searchButton").on("click", () => {
+    }
 
 
-                console.log(UIModule.getData());
-                console.log(searchItem)
-                dataModule.findData(searchItem, handle)
+    // $(window).on("load", () => {
+
+    // function init() {
+    //     dataModule.loadData(handle)
+
+    // }
 
 
-
-
-
-
-            })
-
-
-        }
+    // })
 
 
 
+    var searchListener = () => {
 
-        return {
+        $("#searchButton").on("click", (e) => {
+            e.preventDefault()
 
-            searchListener
-
-        }
-
+            let searchItem = UIModule.getData()
+            console.log(searchItem)
 
 
-    })(UIModule, dataModule);
 
-    mainModule.searchListener();
+            // $(window).off("load", () => {
 
-});
+
+            //     dataModule.loadData(handle)
+
+            // })
+            // $('#main').html("")
+
+
+            dataModule.findData(searchItem, handleSearch)
+
+
+
+
+
+
+        })
+
+
+    }
+
+
+
+
+    return {
+
+        searchListener,
+        // init
+
+    }
+
+
+
+})(UIModule, dataModule);
+
+// mainModule.init()
+mainModule.searchListener();
+
+// });
