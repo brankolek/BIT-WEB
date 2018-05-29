@@ -1,11 +1,17 @@
-let Details = ((UIdetails, dataModule) => {
+import dataModule from "./dataModule.js"
+import UIdetails from "./UIdetails.js"
+
+let UI = new UIdetails();
+let data = new dataModule();
+
+let details = (() => {
 
 
 
     let handleDetails = (data) => {
 
 
-        UIdetails.renderDetails(data);
+        UI.renderDetails(data);
 
     }
 
@@ -14,7 +20,7 @@ let Details = ((UIdetails, dataModule) => {
 
         //spremiti joj ID 
         let id = window.location.search.split("=")[1]
-        dataModule.ShowInfoPage(id, handleDetails)
+        data.ShowInfoPage(id, handleDetails)
     }
 
 
@@ -29,8 +35,8 @@ let Details = ((UIdetails, dataModule) => {
 
 
 
-})(UIdetails, dataModule)
+})();
 
 
 
-Details.show();
+details.show();

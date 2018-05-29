@@ -1,27 +1,92 @@
-// $(function () {
-let mainModule = ((UIModule, dataModule) => {
+// // $(function () {
+// let mainModule = ((UIModule, dataModule) => {
+
+
+// let handle = (data) => {
+
+//     UIModule.render(data);
+
+// }
+// let handleSearch = (data) => {
+
+//     UIModule.renderSearch(data);
+
+// }
+
+
+// function init() {
+//     dataModule.loadData(handle)
+
+// }
+
+
+
+
+
+
+// var searchListener = () => {
+
+//     $("#searchInput").on("keyup", (e) => {
+//         e.preventDefault()
+
+//         let searchItem = UIModule.getData()
+
+
+//         dataModule.findData(searchItem, handleSearch)
+
+
+//     })
+
+
+// }
+
+
+
+
+
+
+//     return {
+
+//         searchListener,
+//         init
+
+//     }
+
+
+
+// })(UIModule, dataModule);
+
+// mainModule.init()
+// mainModule.searchListener();
+
+// });
+
+import dataModule from "./dataModule.js"
+import UIModule from "./UIModule.js"
+
+let main = (function () {
+
+
+    let data = new dataModule;
+    let UI = new UIModule;
 
 
     let handle = (data) => {
 
-        UIModule.render(data);
+        UI.render(data);
 
     }
     let handleSearch = (data) => {
 
-        UIModule.renderSearch(data);
+        UI.renderSearch(data);
 
     }
 
 
     function init() {
-        dataModule.loadData(handle)
+        data.loadData(handle)
 
     }
-
-
-
-
 
 
     var searchListener = () => {
@@ -29,20 +94,16 @@ let mainModule = ((UIModule, dataModule) => {
         $("#searchInput").on("keyup", (e) => {
             e.preventDefault()
 
-            let searchItem = UIModule.getData()
+            let searchItem = UI.getData()
 
 
-            dataModule.findData(searchItem, handleSearch)
+            data.findData(searchItem, handleSearch)
 
 
         })
 
 
     }
-
-
-
-
 
 
     return {
@@ -54,9 +115,7 @@ let mainModule = ((UIModule, dataModule) => {
 
 
 
-})(UIModule, dataModule);
+})();
 
-mainModule.init()
-mainModule.searchListener();
-
-// });
+main.init()
+main.searchListener();
