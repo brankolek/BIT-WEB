@@ -26,7 +26,7 @@ let mainModule = ((UIModule, dataModule) => {
 
     var searchListener = () => {
 
-        $("#searchButton").on("click", (e) => {
+        $("#searchInput").on("keyup", (e) => {
             e.preventDefault()
 
             let searchItem = UIModule.getData()
@@ -40,17 +40,7 @@ let mainModule = ((UIModule, dataModule) => {
 
     }
 
-    var imgListener = () => {
 
-        $("img").on("click", () => {
-
-
-
-
-        })
-
-
-    }
 
 
 

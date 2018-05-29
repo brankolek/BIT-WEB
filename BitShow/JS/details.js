@@ -13,6 +13,7 @@ let Details = ((UIdetails, dataModule) => {
     function show() {
 
         //spremiti joj ID 
+        let id = window.location.search.split("=")[1]
         dataModule.ShowInfoPage(id, handleDetails)
     }
 
