@@ -18,6 +18,8 @@ let main = (function () {
 
     function init() {
         data.loadData().then((myJson) => {
+            console.log(JSON.stringify(myJson))
+            console.log(myJson, typeof myJson)
             UI.render(myJson)
         })
 
